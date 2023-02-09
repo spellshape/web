@@ -1,7 +1,5 @@
 # Spellshape Frontend
 
-![Screenshot](./assets/cover.jpg)
-
 ## Contents
 
 ### [App template](https://github.com/tendermint/vue/tree/develop/packages/template)
