@@ -1,6 +1,6 @@
 name: Publish new major version
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   workflow_dispatch:
 
@@ -18,9 +18,9 @@ jobs:
           node-version: 16
           registry-url: 'https://registry.npmjs.org'
           scope: ignt
-          
+
       - name: Configure git
-        run: git config --global user.email "hello@ignite.com" &&  git config --global user.name "Lerna CI"
+        run: git config --global user.email "hello@spellshape.com" &&  git config --global user.name "Lerna CI"
 
       - name: Build
         run: npm run build

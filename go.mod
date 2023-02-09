@@ -1,3 +1,3 @@
-module github.com/ignite/web
+module github.com/spellshape/web
 
 go 1.16

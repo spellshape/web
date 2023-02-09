@@ -1,6 +1,6 @@
 name: Alpha release & deploy
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   workflow_dispatch:
 
@@ -18,7 +18,7 @@ jobs:
           node-version: 16
           registry-url: 'https://registry.npmjs.org'
           scope: ignt
-          
+
       - name: Build
         run: npm run build
 
@@ -27,11 +27,11 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.sp_npm_token}}
 
-      - name: Install Ignite CLI
-        run: 'curl https://get.ignite.com/cli! | bash'
-        
+      - name: Install Spellshape CLI
+        run: 'curl https://get.spellshape.com/cli! | bash'
+
       - name: Install alpha
-        run: lerna exec --scope='@starport/template' -- npm i @starport/vue@alpha @starport/vuex@alpha
+        run: lerna exec --scope='@spellshape/template' -- npm i @spellshape/vue@alpha @spellshape/vuex@alpha
 
       - name: Build
         run: npm run build
@@ -43,4 +43,3 @@ jobs:
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-
