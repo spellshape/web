@@ -2,7 +2,7 @@
 
 ## Contents
 
-### [App template](https://github.com/tendermint/vue/tree/develop/packages/template)
+### App template
 
 A Vue 3 web application template is bundled with the [Spellshape CLI](https://github.com/spellshape-hq/cli). The template features an asset list, transaction list, token transfer component, and a form component for custom models created with Spellshape. The template is connected to the [Keplr](https://github.com/chainapsis/keplr-wallet/) wallet by default.
 
